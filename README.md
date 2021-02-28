@@ -7,7 +7,7 @@
   Much of a doctor's day is spent reading charts of patients, and deriving a diagnosis based on the patient data they have on hand. With the advent of Machine Learnign and AI, 
 models can be trained to recoginize these diseases based on past scans. These tools can be used to lower barriers for entry for many people wihout regular access for doctor 
 visits. Images provie the perfect medium for this application as many diagnoses are made by stsudying a patient's MRI or single cell bood slides. This applicaton requires a 
-large image dataset: [Image Dataset](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=61080958#61080958171ba531fc374829b21d3647e95f532c), with over 18000 labeled
+large image dataset: [Image Dataset](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=61080958#61080958171ba531fc374829b21d3647e95f532c), with over 15000 labeled
 images amoung 15 image categories.
 
 ### Method
@@ -17,6 +17,10 @@ pixel image to assign a socre to each bin. To reduce noice, the bins would overl
 differentiation among the pictures. Our model will taken in an annotated single cell image, and determine what form of leukemia, if detectable, the patient is diagnosed with. 
 Ths method was chosen for its robustness for many diseases across numerous medical image types, and it would alllow for the model builder to see what bins have the most 
 imfromation, and which bin is the least useful. This allows for the model to be optimized quick and easy as one sees fit, unlike neaural networks which can be difficult to explain 
-to non-technical personnel. The goal of this project is to show that a model with simple 
+to non-technical personnel. The goal of this project is to show that a model with simple features can be a powerful tool in classifying medical images. 
 
+### Exploratory Data Analysis
+  The dataset was heavily imbalanced with the largest leukemia type NGS (segmented Neutrophil) accounting for over 8000 images, and along with the next two largest largest 
+  categories, there was over 11000 images between the top 3 classes. This was going to be a significant problem, as the data was currently constructed was going to be heavily 
+  favored for the 
 
