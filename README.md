@@ -22,4 +22,5 @@ to non-technical personnel. The goal of this project is to show that a model wit
 ### Exploratory Data Analysis
   The dataset contained 15000 single cell images that had already been labeled and anotated by trained medical personnel. The datset is heavily imbalanced, with the largest category NGS (segmented Neutrophil) containing over 8000 images, the 3 largest categories contained over 11000 images. 
 ![](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/class_dist.png)
-
+The features we weill be constructing will be constructed as follows:
+![](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/templetae.png)
