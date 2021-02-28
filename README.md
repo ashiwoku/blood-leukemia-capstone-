@@ -22,5 +22,13 @@ to non-technical personnel. The goal of this project is to show that a model wit
 ### Exploratory Data Analysis
   The dataset contained 15000 single cell images that had already been labeled and anotated by trained medical personnel. The datset is heavily imbalanced, with the largest category NGS (segmented Neutrophil) containing over 8000 images, the 3 largest categories contained over 11000 images. 
 ![](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/class_dist.png)
+
+### Feature Engineering 
 The features we weill be constructing will be constructed as follows:
 ![](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/templetae.png)
+
+The Guassian Process is a process in which each pixel is subjected to a guassian distribution and its pdf score is calculated, with the mean and standard deviation pre-determined.
+The result of this process is 16 features that are distinct between classes, and are ready to be supplied to our model. 
+
+### Model Building and Results
+
