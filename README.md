@@ -20,7 +20,6 @@ imfromation, and which bin is the least useful. This allows for the model to be 
 to non-technical personnel. The goal of this project is to show that a model with simple features can be a powerful tool in classifying medical images. 
 
 ### Exploratory Data Analysis
-  The dataset was heavily imbalanced with the largest leukemia type NGS (segmented Neutrophil) accounting for over 8000 images, and along with the next two largest largest 
-  categories, there was over 11000 images between the top 3 classes. This was going to be a significant problem, as the data was currently constructed was going to be heavily 
-  favored for the 
+  The dataset contained 15000 single cell images that had already been labeled and anotated by trained medical personnel. The datset is heavily imbalanced, with the largest category NGS (segmented Neutrophil) containing over 8000 images, the 3 largest categories contained over 11000 images. 
+![](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/class_dist.png)
 
