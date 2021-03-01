@@ -35,5 +35,5 @@ The result of this process is 16 features that are distinct between classes, and
 Initialy, the features were generated using only the pixel intensity values, or the ![gray scale pixels only](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/Feature%20Engineering%20(Gray%20Scale%20Values)). 
 
 ### Model Building and Results
-  The issue of imbalance within the datasets was addressed with assigning weights to these classes 
+  The issue of imbalance within the datasets was addressed with 2 methods: using **SMOTE (Synthetic Minority Oversampling Technique)** and **applying class weights** to the minority classes. 
 
