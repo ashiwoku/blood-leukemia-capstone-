@@ -36,11 +36,22 @@ Initialy, the features were generated using only the pixel intensity values, or 
 
 ### Model Building and Results
   The issue of imbalance within the datasets was addressed with 2 methods: using **SMOTE (Synthetic Minority Oversampling Technique)** and **applying class weights** to the minority classes.The SMOTE analysis tool from sckit-learn is a tool that generates sampels of the minority class by determining the heirarcheal sample space and creating values 
-for the minorty classes from that space. The types of models used were **Logistic Regression** and **Linear Regression**. The output labels were relabeled using dummy variables
-so that they can be properly input into the model. 
+for the minorty classes from that space. The types of models used were **Logistic Regression** and **Support Vector Machines (SVM)**. The output labels were relabeled using 
+dummy variables so that they can be properly input into the model. 
 
 The notebook containing results of the models built with only the grayscale pixel values is ![here](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/Modeling%20.ipynb)
 
 The notebook containing model results for all three color channels is ![here](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/modeling%20with%203%20color%20channels.ipynb)
 
+### Results 
+  The model results drastically improved with the implentation of SMOTE analysis, upwards of 20% for the minority classes. Te use of all three color channels allowed for 
+the models to differentiate between the classes more easily, and the reulst could to impove the detection of the smaller classes, up to several hundred original images. After 
+top 6 classes, model results were rather poor which is to be expected as the smallest classes contained as little as 11 images, whic is not much material for a model to learn a
+category. 
+
+## Further Improvements 
+- Implement image rotation, blurring, and other image augmentation techniques to improve the minority sample sizes. 
+- USe of more powerful machine learning models such as Neural Networks. 
+- Increase the nummber of bins and/or manipulating the mean and standrad deviation of the feature bins. 
+- Further reasearch of the minority classes 
 
