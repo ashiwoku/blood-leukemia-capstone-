@@ -30,5 +30,10 @@ The features we weill be constructing will be constructed as follows:
 The Guassian Process is a process in which each pixel is subjected to a guassian distribution and its pdf score is calculated, with the mean and standard deviation pre-determined.
 The result of this process is 16 features that are distinct between classes, and are ready to be supplied to our model. 
 
+![Feature Engineering Notebook](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/feature%20engineering_2%20(3%20colors).ipynb)
+
+Initialy, the features were generated using only the pixel intensity values, or the ![gray scale pixels only](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/Feature%20Engineering%20(Gray%20Scale%20Values)). 
+
 ### Model Building and Results
+  The issue of imbalance within the datasets was addressed with assigning weights to these classes 
 
