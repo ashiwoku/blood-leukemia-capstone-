@@ -35,5 +35,12 @@ The result of this process is 16 features that are distinct between classes, and
 Initialy, the features were generated using only the pixel intensity values, or the ![gray scale pixels only](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/Feature%20Engineering%20(Gray%20Scale%20Values)). 
 
 ### Model Building and Results
-  The issue of imbalance within the datasets was addressed with 2 methods: using **SMOTE (Synthetic Minority Oversampling Technique)** and **applying class weights** to the minority classes. 
+  The issue of imbalance within the datasets was addressed with 2 methods: using **SMOTE (Synthetic Minority Oversampling Technique)** and **applying class weights** to the minority classes.The SMOTE analysis tool from sckit-learn is a tool that generates sampels of the minority class by determining the heirarcheal sample space and creating values 
+for the minorty classes from that space. The types of models used were **Logistic Regression** and **Linear Regression**. The output labels were relabeled using dummy variables
+so that they can be properly input into the model. 
+
+The notebook containing results of the models built with only the grayscale pixel values is ![here](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/Modeling%20.ipynb)
+
+The notebook containing model results for all three color channels is ![here](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/modeling%20with%203%20color%20channels.ipynb)
+
 
