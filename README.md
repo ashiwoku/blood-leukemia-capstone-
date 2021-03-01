@@ -44,14 +44,19 @@ The notebook containing results of the models built with only the grayscale pixe
 The notebook containing model results for all three color channels is ![here](https://github.com/ashiwoku/blood-leukemia-capstone-/blob/main/modeling%20with%203%20color%20channels.ipynb)
 
 ### Results 
-  The model results drastically improved with the implentation of SMOTE analysis, upwards of 20% for the minority classes. Te use of all three color channels allowed for 
+  The model results drastically improved with the implentation of SMOTE analysis, upwards of 20% for the minority classes. The use of all three color channels allowed for 
 the models to differentiate between the classes more easily, and the reulst could to impove the detection of the smaller classes, up to several hundred original images. After 
 top 6 classes, model results were rather poor which is to be expected as the smallest classes contained as little as 11 images, whic is not much material for a model to learn a
 category. 
 
 ## Further Improvements 
 - Implement image rotation, blurring, and other image augmentation techniques to improve the minority sample sizes. 
-- USe of more powerful machine learning models such as Neural Networks. 
-- Increase the nummber of bins and/or manipulating the mean and standrad deviation of the feature bins. 
-- Further reasearch of the minority classes 
+- Use of more powerful machine learning models such as Neural Networks. 
+- Increase the nummber of bins and/or manipulating the mean and standrad deviation of the feature bins to get better model performance. 
+- Further reasearch of the minority classes coud allow for combining classes to redce the number of classes as well as helping balance the categories. 
+- Use a blob detector 
+
+## References
+I would not have been able to complete this porject without the help of my mentor, Dr. Ankur Argawal. He was very helpful in helping me understand the soft histogram technique
+and how to best utilise it for this project. Here is the ![link](https://users.isy.liu.se/en/cvl/perfo/papers/ssab01_pf.pdf) of a paper that provides more information behind this feature engineering technique. I would love to hear feedback of those who discover this project, and what they thik of my results at abolajishiwoku@yahoo.com. 
 
